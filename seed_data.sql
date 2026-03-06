@@ -10,3 +10,9 @@ INSERT INTO SETS VALUES ("C", "Burnaby");
 INSERT INTO SETS VALUES ("D", "Burnaby");
 INSERT INTO SETS VALUES ("E", "Downtown");
 INSERT INTO SETS VALUES ("F", "Downtown");
+
+---------------------------------------
+-- COURSES
+---------------------------------------
+INSERT INTO courses (course_code, title, credits)
+VALUES ('COMP2714', 'Relational Database Systems', 3);
