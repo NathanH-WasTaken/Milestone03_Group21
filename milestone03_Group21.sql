@@ -1,3 +1,7 @@
+DROP SCHEMA IF EXISTS lab_tracker_group_21 CASCADE;
+CREATE SCHEMA lab_tracker_group_21;
+SET search_path TO lab_tracker_group_21;
+
 CREATE TABLE terms (
     term_code   VARCHAR(10) PRIMARY KEY,
     name        VARCHAR(100),
