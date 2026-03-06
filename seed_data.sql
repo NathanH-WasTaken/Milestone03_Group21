@@ -16,3 +16,16 @@ INSERT INTO SETS VALUES ("F", "Downtown");
 ---------------------------------------
 INSERT INTO courses (course_code, title, credits)
 VALUES ('COMP2714', 'Relational Database Systems', 3);
+
+
+---------------------------------------
+-- USERS
+---------------------------------------
+INSERT INTO users (user_id, display_name, role, email)
+VALUES (u_instructor, Maryam Khezrzadeh, instructor, mkhezrzadeh@bcit.ca);
+
+INSERT INTO users (user_id, display_name, role, email)
+VALUES (u_ta1, Daniel Saavedra, ta, dsaavedra@bcit.ca);
+
+INSERT INTO users (user_id, display_name, role, email)
+VALUES (u_system, Lab Tracker System , system, noreply@labtracker.local);
