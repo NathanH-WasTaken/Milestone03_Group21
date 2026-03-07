@@ -119,3 +119,11 @@ VALUES
     ('F002-L06-L02', 'F002', 'L06-L02', '2', 'In Progress', TRUE, 'Present', '2025-09-18 19:40', 'https://submit.bcit.ca/comp2714/inlab/F002-L06-L02.pdf', NULL, NULL, NULL, NULL, FALSE),
     ('F003-L06-L01', 'F003', 'L06-L01', '1', 'Submitted', TRUE, 'Present', '2025-09-11 19:45', 'https://submit.bcit.ca/comp2714/inlab/F003-L06-L01.pdf', '2025-09-12 21:45', 'https://submit.bcit.ca/comp2714/polished/F003-L06-L01.pdf', '8.5', '8.2', FALSE),
     ('F003-L06-L02', 'F003', 'L06-L02', '2', 'Submitted', FALSE, 'Present', '2025-09-18 19:35', 'https://submit.bcit.ca/comp2714/inlab/F003-L06-L02.pdf', '2025-09-20 20:35', 'https://submit.bcit.ca/comp2714/polished/F003-L06-L02.pdf', '7.0', '6.7', FALSE);
+
+---------------------------------------
+-- PROGRESS CHANGE LOG -- HAVENT TESTED
+---------------------------------------
+INSERT INTO progress_change_log (change_id, progress_id, changed_by, changed_at	field,	old_value,	new_value,	reason)
+VALUES ('chg1',	'A001-L01-L01',	'u_instructor',	'2025-09-09', '12:10',	'instructor_assessment',	8,	8.5,	'Regraded after resubmission'),
+       ('chg2',	'A003-L01-L02',	'u_ta1',	'2025-09-16', '20:45',	'status',	'In Progress'	'Submitted'	'Student submitted during lab; TA marked as submitted'),
+       ('chg3',	'B003-L02-L01',	'u_system',	'2025-09-23', '23:59',	'late',	FALSE,	TRUE,	'Auto-flagged after set-specific due time');
