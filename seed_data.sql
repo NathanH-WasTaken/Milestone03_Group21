@@ -1,15 +1,23 @@
 /* Terms, Sets, Students */
 
+---------------------------------------
+-- TERMS
+---------------------------------------
 INSERT INTO TERMS VALUES ("202510", "Winter 2025", 2025-01-06, 2025-05-23);
 INSERT INTO TERMS VALUES ("202520", "Spring/Summer 2025", 2025-05-25, 2025-06-20);
 INSERT INTO TERMS VALUES ("202530", "Fall 2025", 2025-09-02, 2025-12-12);
 
+
+---------------------------------------
+-- SETS
+---------------------------------------
 INSERT INTO SETS VALUES ("A", "Burnaby");
 INSERT INTO SETS VALUES ("B", "Burnaby");
 INSERT INTO SETS VALUES ("C", "Burnaby");
 INSERT INTO SETS VALUES ("D", "Burnaby");
 INSERT INTO SETS VALUES ("E", "Downtown");
 INSERT INTO SETS VALUES ("F", "Downtown");
+
 
 ---------------------------------------
 -- COURSES
@@ -30,6 +38,7 @@ VALUES (u_ta1, Daniel Saavedra, ta, dsaavedra@bcit.ca);
 INSERT INTO users (user_id, display_name, role, email)
 VALUES (u_system, Lab Tracker System , system, noreply@labtracker.local);
 
+<<<<<<< HEAD
 ---------------------------------------
 -- PROGRESS
 ---------------------------------------
@@ -72,3 +81,28 @@ VALUES
     ('F002-L06-L02', 'F002', 'L06-L02', '2', 'In Progress', TRUE, 'Present', '2025-09-18 19:40', 'https://submit.bcit.ca/comp2714/inlab/F002-L06-L02.pdf', NULL, NULL, NULL, NULL, FALSE),
     ('F003-L06-L01', 'F003', 'L06-L01', '1', 'Submitted', TRUE, 'Present', '2025-09-11 19:45', 'https://submit.bcit.ca/comp2714/inlab/F003-L06-L01.pdf', '2025-09-12 21:45', 'https://submit.bcit.ca/comp2714/polished/F003-L06-L01.pdf', '8.5', '8.2', FALSE),
     ('F003-L06-L02', 'F003', 'L06-L02', '2', 'Submitted', FALSE, 'Present', '2025-09-18 19:35', 'https://submit.bcit.ca/comp2714/inlab/F003-L06-L02.pdf', '2025-09-20 20:35', 'https://submit.bcit.ca/comp2714/polished/F003-L06-L02.pdf', '7.0', '6.7', FALSE);
+=======
+
+---------------------------------------
+-- STUDENTS
+---------------------------------------
+INSERT INTO STUDENTS VALUES ("A001", "A", "Ava", "Nguyen", "ava.nguyen@my.bcit.ca");
+INSERT INTO STUDENTS VALUES ("A002", "A", "Noah", "Kim", "noah.kim@my.bcit.ca");
+INSERT INTO STUDENTS VALUES ("A003", "A", "Oliver", "Singh", "oliver.singh@my.bcit.ca");
+INSERT INTO STUDENTS VALUES ("B001", "B", "Maya", "Fisher", "maya.fisher@my.bcit.ca");
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+
+>>>>>>> f1c84c9ab6f812ddc9b1bbcc93a8507b30debfe5
