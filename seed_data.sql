@@ -12,12 +12,12 @@ VALUES ('202510', 'Winter 2025', '2025-01-06', '2025-05-23'),
 ---------------------------------------
 -- SETS
 ---------------------------------------
-INSERT INTO SETS VALUES ("A", "Burnaby");
-INSERT INTO SETS VALUES ("B", "Burnaby");
-INSERT INTO SETS VALUES ("C", "Burnaby");
-INSERT INTO SETS VALUES ("D", "Burnaby");
-INSERT INTO SETS VALUES ("E", "Downtown");
-INSERT INTO SETS VALUES ("F", "Downtown");
+INSERT INTO SETS VALUES ('A', 'Burnaby');
+INSERT INTO SETS VALUES ('B', 'Burnaby');
+INSERT INTO SETS VALUES ('C', 'Burnaby');
+INSERT INTO SETS VALUES ('D', 'Burnaby');
+INSERT INTO SETS VALUES ('E', 'Downtown');
+INSERT INTO SETS VALUES ('F', 'Downtown');
 
 
 ---------------------------------------
@@ -31,13 +31,13 @@ VALUES ('COMP2714', 'Relational Database Systems', 3);
 -- USERS
 ---------------------------------------
 INSERT INTO users (user_id, display_name, role, email)
-VALUES (u_instructor, Maryam Khezrzadeh, instructor, mkhezrzadeh@bcit.ca);
+VALUES ('u_instructor', 'Maryam Khezrzadeh', 'instructor', 'mkhezrzadeh@bcit.ca');
 
 INSERT INTO users (user_id, display_name, role, email)
-VALUES (u_ta1, Daniel Saavedra, ta, dsaavedra@bcit.ca);
+VALUES ('u_ta1', 'Daniel Saavedra', 'ta', 'dsaavedra@bcit.ca');
 
 INSERT INTO users (user_id, display_name, role, email)
-VALUES (u_system, Lab Tracker System , system, noreply@labtracker.local);
+VALUES ('u_system', 'Lab Tracker System' , 'system', 'noreply@labtracker.local');
 
 
 ---------------------------------------
