@@ -43,24 +43,24 @@ VALUES ('u_system', 'Lab Tracker System' , 'system', 'noreply@labtracker.local')
 ---------------------------------------
 -- STUDENTS
 ---------------------------------------
-INSERT INTO STUDENTS VALUES ("A001", "A", "Ava", "Nguyen", "ava.nguyen@my.bcit.ca");
-INSERT INTO STUDENTS VALUES ("A002", "A", "Noah", "Kim", "noah.kim@my.bcit.ca");
-INSERT INTO STUDENTS VALUES ("A003", "A", "Oliver", "Singh", "oliver.singh@my.bcit.ca");
-INSERT INTO STUDENTS VALUES ("B001", "B", "Maya", "Fisher", "maya.fisher@my.bcit.ca");
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
-INSERT INTO STUDENTS VALUES (PLACEHOLDER);
+INSERT INTO STUDENTS VALUES ('A001', 'A', 'Ava', 'Nguyen', 'ava.nguyen@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('A002', 'A', 'Noah', 'Kim', 'noah.kim@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('A003', 'A', 'Oliver', 'Singh', 'oliver.singh@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('B001', 'B', 'Maya', 'Fisher', 'maya.fisher@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('B002', 'B', 'Leo', 'Park', 'leo.park@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('B003', 'B', 'ZoÃ©', 'Martin', 'zoe.martin@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('C001', 'C', 'Sofia', 'Chen', 'sofia.chen@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('C002', 'C', 'Arjun', 'Patel', 'arjun.patel@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('C003', 'C', 'Liam', 'Oâ€™Reilly', 'liam.oreilly@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('D001', 'D', 'Layla', 'Haddad', 'layla.haddad@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('D002', 'D', 'Ethan', 'Wong', 'ethan.wong@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('D003', 'D', 'Nora', 'Iverson', 'nora.iverson@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('E001', 'E', 'Diego', 'Alvarez', 'diego.alvarez@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('E002', 'E', 'Hana', 'Yamamoto', 'hana.yamamoto@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('E003', 'E', 'Farah', 'Rahimi', 'farah.rahimi@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('F001', 'F', 'Marco', 'Russo', 'marco.russo@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('F002', 'F', 'Amir', 'Kazemi', 'amir.kazemi@my.bcit.ca');
+INSERT INTO STUDENTS VALUES ('F003', 'F', 'Chloe', 'Dubois', 'chloe.dubois@my.bcit.ca');
 
 
 
