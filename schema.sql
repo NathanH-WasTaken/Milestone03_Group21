@@ -79,8 +79,8 @@ CREATE TABLE progress (
     inlab_submission_link     TEXT,
     polished_submitted_at     TIMESTAMP,
     polished_submission_link  TEXT,
-    instructor_assessment     VARCHAR(50),
-    self_assessment           VARCHAR(50),
+    instructor_assessment     DECIMAL(3,1) CHECK (instructor_assessment BETWEEN 0 AND 10),
+    self_assessment           DECIMAL(3,1) CHECK (instructor_assessment BETWEEN 0 AND 10),
     late                      BOOLEAN
 );
 
