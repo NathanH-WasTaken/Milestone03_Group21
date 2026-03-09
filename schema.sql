@@ -17,7 +17,7 @@ CREATE TABLE terms (
 );
 
 CREATE TABLE sets (
-    set_code  VARCHAR(10)  NOT NULL,
+    set_code  VARCHAR(1)  NOT NULL,
     campus    VARCHAR(100) NOT NULL,
     CONSTRAINT pk_sets PRIMARY KEY (set_code)
 );
@@ -41,8 +41,8 @@ CREATE TABLE users (
 );
 
 CREATE TABLE students (
-    student_id  VARCHAR(20)  NOT NULL,
-    set_code    VARCHAR(10)  NOT NULL,
+    student_id  VARCHAR(4)  NOT NULL,
+    set_code    VARCHAR(1)  NOT NULL,
     first_name  VARCHAR(100) NOT NULL,
     last_name   VARCHAR(100) NOT NULL,
     email       VARCHAR(100) NOT NULL,
@@ -118,7 +118,7 @@ CREATE TABLE lab_events (
 
 CREATE TABLE progress (
     progress_id               VARCHAR(50)  NOT NULL,
-    student_id                VARCHAR(20)  NOT NULL,
+    student_id                VARCHAR(4)  NOT NULL,
     event_id                  VARCHAR(50)  NOT NULL,
     lab_number                INT          NOT NULL,
     status                    VARCHAR(50)  NOT NULL DEFAULT 'Not Started',

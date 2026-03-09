@@ -1,3 +1,7 @@
+-- =============================================================
+-- Group 21 | test_queries.sql
+-- =============================================================
+
 -- SET SEARCH PATH TO LAB TRACKER GROUP 21
 SET search_path TO lab_tracker_group_21;
 
