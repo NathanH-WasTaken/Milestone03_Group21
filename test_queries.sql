@@ -20,7 +20,6 @@ UNION ALL SELECT 'progress',    COUNT(*) FROM progress
 UNION ALL SELECT 'progress_change_log', COUNT(*) FROM progress_change_log
 ORDER BY tbl;
 
-
 /* Check Students With Late Submission */
 SELECT student_id, lab_number, inlab_submitted_at, polished_submitted_at, late
 FROM progress
@@ -46,3 +45,29 @@ SELECT student_id,
 FROM progress
 WHERE instructor_assessment IS NOT NULL
 ORDER BY student_id, lab_number;
+
+
+---------------------------------------
+-- SANITY CHECK
+-- Expected: ERROR:  insert or update on table "progress" 
+-- violates foreign key constraint 
+---------------------------------------
+-- INSERT INTO progress 
+-- VALUES
+-- ('A023-L01-L01', 'A023', 'L01-L01', 1, 'Submitted', TRUE, 'Present', '2025-09-08 10:45', 
+-- 'https://submit.bcit.ca/comp2714/inlab/A023-L01-L01.pdf', '2025-09-09 12:45', 
+-- 'https://submit.bcit.ca/comp2714/polished/A023-L01-L01.pdf', 8.5, 8.2, FALSE);
+
+---------------------------------------
+-- SANITY CHECK: duplicate student email
+-- Expected: ERROR - unique constraint violation
+---------------------------------------
+-- INSERT INTO students (student_id, set_code, first_name, last_name, email)
+-- VALUES ('A999', 'A', 'Test', 'User', 'ava.nguyen@my.bcit.ca');
+
+---------------------------------------
+-- SANITY CHECK: malformed term_code
+-- Expected: ERROR - check constraint violation
+---------------------------------------
+-- INSERT INTO terms (term_code, name, start_date, end_date)
+-- VALUES ('999999', 'Bad Term', '2025-01-01', '2025-04-01');
