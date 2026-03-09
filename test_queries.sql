@@ -46,6 +46,17 @@ FROM progress
 WHERE instructor_assessment IS NOT NULL
 ORDER BY student_id, lab_number;
 
+/* Students Who Attended But Never Submitted In-Lab */
+SELECT student_id, lab_number, attendance, inlab_submission_link
+FROM progress
+WHERE attendance = 'Present' AND inlab_submission_link IS NULL;
+
+/* Students With Excused Attendance */
+SELECT student_id, lab_number, attendance, status
+FROM progress
+WHERE attendance = 'Excused';   
+
+
 
 ---------------------------------------
 -- SANITY CHECK
@@ -71,3 +82,15 @@ ORDER BY student_id, lab_number;
 ---------------------------------------
 -- INSERT INTO terms (term_code, name, start_date, end_date)
 -- VALUES ('999999', 'Bad Term', '2025-01-01', '2025-04-01');
+---------------------------------------
+-- SANITY CHECK: invalid attendance value
+-- Expected: ERROR - check constraint violation
+---------------------------------------
+-- INSERT INTO progress (progress_id, student_id, event_id, lab_number, status, prepared, attendance, late)
+-- VALUES ('TEST-002', 'A001', 'L01-L02', 2, 'Not Started', FALSE, 'Maybe', FALSE);
+---------------------------------------
+-- SANITY CHECK: invalid status value
+-- Expected: ERROR - check constraint violation
+---------------------------------------
+-- INSERT INTO progress (progress_id, student_id, event_id, lab_number, status, prepared, attendance, late)
+-- VALUES ('TEST-003', 'A001', 'L01-L02', 2, 'Pending', FALSE, 'Absent', FALSE);
